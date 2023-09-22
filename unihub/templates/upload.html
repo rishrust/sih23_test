@@ -1,0 +1,186 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Browser</title>
+
+  <!-- <style> -->
+   <!-- /* .avatar {
+  vertical-align: middle;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+} */ -->
+<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            /* padding-right: 90px; */
+        }
+        /* input {
+            padding-left:200px ;
+            
+        } */
+        .first{
+            padding-right: 170px;
+        }
+        .second{
+            padding-right: 90px;
+        }
+        .third{
+            padding-right: 185px;
+        }
+        .fourth{
+            padding-right: 160px;
+        }
+        .fivth{
+            padding-right: 300px;
+        }
+        .sixth{
+            padding-right: 170px;
+        }
+        .seventh{
+            padding-right: 130px;
+        }
+        
+        input[type="text"], input[type="file"] {
+            width: 50%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #dde4cc;
+        }
+        textarea {
+            background-color: #dde4cc;
+            width: 63%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        h1{
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-cover"
+style="background-image: url('../resources/view_back.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <!-- <header start> -->
+   <header class="text-white  font-medium flex flex-row">
+    <a href=""><img src="../resources/logo_name.png" alt="Not available"  width="120px" class="mt-0 h-21 w-25"></a>
+    <div class="container h-13 mt-0 mx-auto flex flex-wrap p-0 flex-col md:flex-row items-center">
+        <!-- <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"> -->
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg> -->
+          <!-- <span class="ml-3 text-xl">SIH</span> -->
+        <!-- </a> -->
+        <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-purple-300" href="index" >Home</a>
+            <a class="mr-5 hover:text-purple-300" href="index/view">View</a>
+            <a class="mr-5 hover:text-purple-300" href="">Upload</a>
+            <a class="mr-5 hover:text-purple-300 pr-20" href="index/aboutus">About Us</a>
+            <div class="relative pl-80">
+          <!-- <div class="relative pl-80">
+            <div class="absolute pointer-events-auto ...">
+              <svg class="absolute text-slate-400 h-5 w-7" viewBox="0 -7 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <input class="text-black mt-1 rounded" type="text" placeholder="Explore" >
+          </div> -->
+        </nav>
+        <button class="inline-flex items-center bg-gray-400 border-0 py-1 px-2 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="landingpage.html">Logout</a>
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+<!-- <header end> -->
+ <br>
+ <br>
+ <br>
+ <!--Upload -->
+ <div class="container">
+     <h1>Fill below Project related details</h1>
+     <br>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label class="first" for="studentName">Student Name *</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-group">
+                <label class="second" for="collegeName">University/College Name *</label>
+                <input type="text" id="collegeName" name="collegeName" required>
+            </div>
+            <div class="form-group">
+                <label class="third" for="projectTitle">Project Title *</label>
+                <input type="text" id="projectTitle" name="projectTitle" required>
+            </div>
+            <div class="form-group">
+                <label class="fourth" for="projectDomain">Project Domain *</label>
+                <input type="text" id="projectDomain" name="projectDomain" required>
+            </div>
+            <div class="form-group">
+                <label class="fifth" for="projectDescription">Project Content *</label>
+                <textarea   id="projectDescription" name="projectDescription" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label class="sixth" for="studentPhoto">Student Photo *</label>
+                <input type="file" id="studentPhoto" name="studentPhoto" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label class="seventh" for="projectCover">Project Cover Page *</label>
+                <input type="file" id="projectCover" name="projectCover" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <!--Upload -->
+    
+  <script src="script.js"></script>
+</body>
+
+</html>
